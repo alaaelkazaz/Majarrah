@@ -1,0 +1,489 @@
+@import "_fontface.css";
+
+/*--------------------------------------------------------------
+1.0 Fonts
+--------------------------------------------------------------*/
+body {
+	direction: rtl;
+	font-family: 'Dubai', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	text-align: right;
+	background-color: #ECEFF1;
+	overflow: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: '29ltBukra', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 700;
+}
+
+/*---------------------------Navigation Bar  -----------------------*/
+.navbar {
+	height: 70px;
+	position:absolute;
+	width: 100%;
+}
+#majara-logo {
+	font-family: '29ltBukra', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 30px;
+	color: #fff;
+	margin-right: 0;
+}
+.navbar-toggler-icon{
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.nav-link {
+	color: #fff;
+}
+.nav-link:hover, .nav-link:active {
+	color: #fff;
+}
+.nav-link.navbar-btn {
+	padding: 8px 20px!important;
+	color: #1A237E;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+@media screen and (min-width: 992px) {
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding: 0 10px;
+	}
+	.nav-link.navbar-btn {
+		margin-right: 10px;
+	}
+}
+
+/*--------------------------------------------------------------
+1.0 Header
+--------------------------------------------------------------*/
+header {
+	color: #fff;
+	background: #1A237E url("../images/bg-wide@2x.jpg") no-repeat center;
+	background-size: cover;
+}
+.header-lg {
+	padding: 220px 0 100px 0;
+}
+.header-lg .header-title {
+	margin-bottom: 30px;
+	line-height: 1.6;
+}
+.header-search {
+	position: relative;
+}
+.header-search .form-control {
+	height: 60px;
+	font-size: 20px;
+	padding: 15px 20px;
+	border: 0;
+	box-shadow: 0 3px 6px rgba(55, 71, 79, .1);
+}
+.header-search .btn {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 60px;
+	padding: 15px 20px;
+	background-color: #fff;
+	color: #546E7A;
+	box-shadow: none!important;
+}
+.header-search .btn span {
+	font-size: 28px;
+	vertical-align: middle;
+}
+
+.most-searched {
+	text-align: right;
+	padding-top: 15px;
+}
+.most-searched h6 {
+	display: inline-block;
+	font-weight: 700;
+}
+.most-searched ul {
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+	margin-right: 2px;
+}
+.most-searched li {
+	display: inline-block;
+	margin-right: 2px;
+}
+.most-searched li:not(:last-child)::after {
+	content: '،';
+}
+.most-searched a {
+	color: #fff;
+}
+
+/*---------------------------Courses Section-----------------------*/
+#courses-header{
+	font-weight: 700;
+	margin: 30px 0px;
+	color: #1A237E;
+
+}
+
+/*---------------------------Courses Section-----------------------*/
+.text-icon {
+	vertical-align: bottom;
+	margin-left: 5px;
+}
+
+section {
+	padding: 60px 0;
+}
+.section-title {
+	font-size: 32px;
+	color: #1A237E;
+	margin-bottom: 40px;
+}
+
+.btn {
+	padding: 10px 35px;
+	font-size: 20px;
+	border: 0;
+}
+.btn-primary {
+	background: #1A237E url('../images/bg-btn@2x.png') no-repeat center;
+	border: 0;
+	background-size: cover;
+	font-weight: 700;
+	box-shadow: 0 6px 10px rgba(55, 71, 79, .1);
+}
+.btn-white {
+	color: #1A237E;
+	background-color: #fff;
+}
+.btn-outline-white {
+	border: 1px solid #fff;
+	color: #fff;
+}
+.btn-outline-white:hover, .btn-outline-white:focus {
+	color: #1A237E;
+	background-color: #fff;
+}
+
+.form-control:focus {
+	box-shadow: none;
+}
+
+/*--------------------------------------------------------------
+1.0 Card
+--------------------------------------------------------------*/
+.cards-catalog {
+	margin-bottom: 10px;
+}
+.card {
+	border: 0;
+	margin-bottom: 20px;
+	box-shadow: 0 6px 10px rgba(55, 71, 79, .1);
+	transition: transform .3s ease,
+				box-shadow .3s ease;
+}
+.card:hover {
+	box-shadow: 0 10px 15px rgba(55, 71, 79, .15);
+	transform: translateY(-5px);
+}
+.card > a {
+	color: inherit;
+	text-decoration: none;
+}
+.card-body {
+	padding: 20px;
+}
+.card-title {
+	font-family: 'Dubai', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color: #1A237E;
+	font-weight: 700;
+}
+.card-text {
+	color: #546E7A;
+}
+
+/*--------------------------------------------------------------
+1.1 Path Card
+--------------------------------------------------------------*/
+.card-path .card-img-top {
+	padding: 20px 20px 0 20px;
+}
+.card-path .card-meta {
+	color: #546E7A;
+	font-weight: 700;
+}
+
+/*--------------------------------------------------------------
+1.1 Tool Card
+--------------------------------------------------------------*/
+.card-tool {
+	padding: 15px;
+}
+.card-tool > a {
+	display: flex;
+	align-items: center;
+}
+.card-tool .card-img {
+	width: 68px;
+	height: 68px;
+	margin-left: 20px;
+	border-radius: 0;
+}
+.card-tool .card-title {
+	margin-bottom: 10px;
+}
+.card-tool .card-body {
+	padding: 0;
+}
+
+/*--------------------------------------------------------------
+9.0 Footer
+--------------------------------------------------------------*/
+.footer-content {
+	padding: 30px 0;
+	border-top: 1px solid #B0BEC5;
+	color: #546E7A;
+}
+.footer-logo {
+	font-family: '29ltBukra', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	display: inline-block;
+	margin-bottom: 10px;
+	font-size: 28px;
+	font-weight: 700;
+	color: #546E7A;
+	vertical-align: middle;
+}
+.footer-logo:hover {
+	color: inherit;
+	text-decoration: none;
+}
+.footer-list {
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.footer-list li {
+	display: inline-block;
+	margin-left: 25px;
+	margin-bottom: 5px;
+}
+.footer-list a {
+	color: #546E7A;
+}
+.footer-list li:last-child {
+	margin-left: 0;
+}
+.credits {
+	margin-top: 20px;
+	margin-bottom: 0;
+	color: #78909C;
+}
+.credits a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+	.footer-logo {
+		margin-left: 30px;
+		margin-bottom: 0;
+	}
+	.footer-list li {
+		margin-bottom: 0;
+	}
+}
+
+
+/*--------------------------------------------------------------
+1.0 Modal
+--------------------------------------------------------------*/
+.modal-content {
+	border: 0;
+	box-shadow: 0 12px 30px rgba(55, 71, 79, .1);
+}
+.modal-content .close {
+	position: absolute;
+	left: 0;
+	top: -25px;
+	font-weight: 400;
+	font-size: 14px;
+	color: #fff;
+	text-shadow: none;
+	opacity: 1;
+	text-decoration: underline;
+}
+.modal-body {
+	padding: 30px;
+}
+.modal-backdrop {
+	background-color: #1A237E;
+	backdrop-filter: blur(10px);
+	opacity: .85!important;
+}
+.modal-divider {
+	position: relative;
+	margin: 20px 0;
+	color: #fff;
+	text-align: center;
+}
+.modal-divider::before,
+.modal-divider::after  {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	width: 45%;
+	height: 1px;
+	background-color: #fff;
+	transform: translateY(-50%);
+}
+.modal-divider::after {
+	left: 0;
+}
+.modal-footer {
+	justify-content: center;
+	border-top: 0;
+	padding-top: 0;
+	padding-bottom: 30px;
+	color: #fff;
+}
+.modal-footer a {
+	color: #fff;
+	text-decoration: underline;
+	font-weight: 700;
+}
+
+@media screen and (min-width: 576px) {
+	.modal-dialog {
+		margin: 60px auto;
+	}
+}
+
+/*--------------------------------------------------------------
+1.0 Custom Modal
+--------------------------------------------------------------*/
+.modal-custom .modal-content {
+	background: url('../images/bg-sm@2x.jpg') no-repeat top center;
+	background-size: cover;
+}
+.modal-custom .modal-header {
+	color: #fff;
+	border-bottom: 0;
+	padding: 40px 30px 10px 30px;
+	justify-content: center;
+}
+.modal-custom .modal-title {
+	font-size: 24px;
+	font-weight: 700;
+}
+.modal-control {
+	height: auto;
+	padding: 15px 20px;
+	border: 0;
+	color: #fff!important;
+	background-color: rgba(255, 255, 255, .2);
+	backdrop-filter: blur(5px);
+}
+.modal-control:focus {
+	background-color: rgba(255, 255, 255, .25);
+}
+
+.modal-control::placeholder {
+	color: #ECEFF1!important;
+}
+
+/*--------------------------------------------------------------
+1.0 Path info
+--------------------------------------------------------------*/
+#path-pic{
+	max-width: 100%;
+	width: 100px;
+	height: 100px;
+	border-radius: 5%;
+	display: inline-block;
+}
+.path-info{
+	display: inline-block;
+}
+#source-info p{
+	display: inline-block;
+}
+
+
+/*--------------------------------------------------------------
+3.0 Path Courses 
+--------------------------------------------------------------*/
+#courses-list{
+	margin-top: -50px;
+}
+#courses-list h5{
+	display: inline-block;
+}
+#courses-list .card{
+	margin-bottom: 4%;
+	box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+#rank{
+	background-color: #ECEFF1;
+	border-radius: 10%;
+	text-indent: 2%;
+	height: 70px;
+	width: 50px;
+	padding-right: 29%;
+	padding-top: 15%;
+}
+.profile-Pic{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #000;
+	display: inline-block;
+	background-image: url('https://picsum.photos/50');
+}
+#added{
+	display: inline-block;
+}
+.add-by{
+	display: inline-block;
+}
+#comments{
+	display: inline-block;
+}
+.hash-list{
+	display: inline-block;
+}
+#save-it{
+	float: left;
+}
+/*--------------------------------------------------------------
+4.0  filter box
+--------------------------------------------------------------*/
+#filter-box{
+	margin-top: -50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #fff;
+	text-indent: 15px;
+	border-radius: 2%;
+
+
+}
+.form-check-label{
+	margin-right: 5%;
+}
+
+/*--------------------------------------------------------------
+5.0 Intersts 
+--------------------------------------------------------------*/
+#intersets{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+#intersets h4{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
